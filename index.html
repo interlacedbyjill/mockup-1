@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interlaced by Jill</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="phone-wrap">
+  <div class="phone-button vol-up"></div>
+  <div class="phone-button vol-dn"></div>
+  <div class="phone-button power"></div>
+
+  <div class="phone-frame">
+    <div class="notch"></div>
+    <div class="phone-screen">
+      <div class="scroll-content">
+
+        <nav>
+          <div class="nav-logo">
+            Interlaced
+            <span>by Jill</span>
+          </div>
+          <div class="nav-right">
+            <button class="nav-filter active">available</button>
+            <button class="nav-filter">all</button>
+            <button class="nav-filter">sold</button>
+          </div>
+        </nav>
+
+        <div class="ticker">
+          <span class="ticker-inner">
+            ✦ limited pieces — pre-order yours &nbsp;&nbsp; ✦ no two pieces the same &nbsp;&nbsp; ✦ hand beaded in davao &nbsp;&nbsp; ✦ accepting pre-orders &nbsp;&nbsp; ✦ limited pieces — pre-order yours &nbsp;&nbsp; ✦ no two pieces the same &nbsp;&nbsp; ✦ hand beaded in davao &nbsp;&nbsp; ✦ accepting pre-orders &nbsp;&nbsp;
+          </span>
+        </div>
+
+        <div class="hero">
+          <div class="hero-bg"></div>
+          <p class="hero-tag">✦ handcrafted in davao</p>
+          <h1 class="hero-title">every piece,<br>a <em>different</em><br>story.</h1>
+          <p class="hero-slogan">some things are meant to be interlaced</p>
+          <div class="hero-btns">
+            <button class="btn-primary" onclick="document.getElementById('shop-section').scrollIntoView({behavior:'smooth'})">shop now</button>
+            <button class="btn-outline" onclick="document.getElementById('customs-section').scrollIntoView({behavior:'smooth'})">customs</button>
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <span class="hero-img-label">interlaced by jill</span>
+        </div>
+
+        <div class="about-strip">
+          <p class="about-eyebrow">our story</p>
+          <p class="about-text">two friends, one thread — making things that <strong>connect</strong> the maker to the wearer.</p>
+        </div>
+
+        <div class="thread-line"></div>
+
+        <div class="hero-strip" id="shop-section">
+          <p class="hero-eyebrow">✦ current stock</p>
+          <h1 class="hero-title" style="font-size:24px; margin-bottom:4px;">each piece is <em>one of a kind</em> — limited pieces — pre-order yours.</h1>
+          <div style="margin-top: 12px;">
+            <div class="stock-notice">
+              <div class="stock-dot"></div>
+              <span>4 pieces available now</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-tabs">
+          <button class="tab active" data-cat="all">all</button>
+          <button class="tab" data-cat="tops">tops</button>
+          <button class="tab" data-cat="bracelets">bracelets</button>
+          <button class="tab" data-cat="bouquets">bouquets</button>
+          <button class="tab" data-cat="customs">customs</button>
+        </div>
+
+        <div class="shop-grid" id="product-grid">
+
+          <div class="product-card" data-cat="tops" data-status="available">
+            <div class="product-img rose">
+              <div class="avail-badge"></div>
+              <span class="product-emoji">👕</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Rosette Top</p>
+              <p class="product-sub">beaded top · size S</p>
+              <div class="product-bottom">
+                <p class="product-price">₱ 850</p>
+                <button class="dm-btn" data-item="Rosette Top">pre-order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="bouquets" data-status="available">
+            <div class="product-img sage">
+              <div class="last-badge">last one</div>
+              <span class="product-emoji">🌸</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Sage Bouquet</p>
+              <p class="product-sub">beaded flowers</p>
+              <div class="product-bottom">
+                <p class="product-price">₱ 650</p>
+                <button class="dm-btn" data-item="Sage Bouquet">pre-order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="bracelets" data-status="available">
+            <div class="product-img blush">
+              <div class="avail-badge"></div>
+              <span class="product-emoji">📿</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Blush Bracelet</p>
+              <p class="product-sub">beaded bracelet</p>
+              <div class="product-bottom">
+                <p class="product-price">₱ 250</p>
+                <button class="dm-btn" data-item="Blush Bracelet">pre-order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="tops" data-status="available">
+            <div class="product-img mauve">
+              <div class="avail-badge"></div>
+              <span class="product-emoji">👕</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Mauve Drop</p>
+              <p class="product-sub">beaded top · size M</p>
+              <div class="product-bottom">
+                <p class="product-price">₱ 850</p>
+                <button class="dm-btn" data-item="Mauve Drop">pre-order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card sold" data-cat="bracelets" data-status="sold">
+            <div class="product-img blue">
+              <div class="sold-tag"><span>sold out</span></div>
+              <span class="product-emoji">📿</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Blue Tide</p>
+              <p class="product-sub">beaded bracelet</p>
+              <div class="product-bottom">
+                <p class="product-price">₱ 250</p>
+                <button class="dm-btn sold-btn">sold out 🤍</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card sold" data-cat="bouquets" data-status="sold">
+            <div class="product-img butter">
+              <div class="sold-tag"><span>sold out</span></div>
+              <span class="product-emoji">🌸</span>
+            </div>
+            <div class="product-info">
+              <p class="product-name">Butter Bloom</p>
+              <p class="product-sub">beaded flowers</p>
+              <div class="product-bottom">
+                <p class="product-price">₱ 650</p>
+                <button class="dm-btn sold-btn">sold out 🤍</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="sold-note" id="sold-note">sold pieces are never remade — each one was one of a kind 🤍</p>
+        <p class="sold-note" id="empty-note" style="display:none;">nothing here right now — check back soon 🤍</p>
+
+        <div class="customs-banner" id="customs-section">
+          <div class="customs-left">
+            <p>want something specific?</p>
+            <p>accepting pre-orders</p>
+          </div>
+          <button class="customs-btn" id="customs-btn">pre-order</button>
+        </div>
+
+        <div id="toast" style="
+          position: fixed;
+          bottom: 100px;
+          left: 50%;
+          transform: translateX(-50%) translateY(20px);
+          background: #2C1F1F;
+          color: #FAF6F1;
+          font-family: 'Jost', sans-serif;
+          font-weight: 300;
+          font-size: 11px;
+          letter-spacing: 0.12em;
+          padding: 10px 20px;
+          border-radius: 20px;
+          opacity: 0;
+          transition: all 0.3s ease;
+          pointer-events: none;
+          white-space: nowrap;
+          z-index: 999;
+        "></div>
+
+        <div class="thread-line"></div>
+
+        <div class="contact-section" id="contact-section">
+          <div class="contact-card">
+            <p class="contact-title">get in touch!</p>
+            <div class="contact-field">
+              <label>name</label>
+              <input type="text" placeholder="your name"/>
+            </div>
+            <div class="contact-field">
+              <label>email</label>
+              <input type="email" placeholder="your email"/>
+            </div>
+            <div class="contact-field">
+              <label>message</label>
+              <textarea placeholder="what are you looking for?"></textarea>
+            </div>
+            <button class="contact-submit" id="contact-submit">send message</button>
+          </div>
+        </div>
+
+        <div class="footer">
+          <span class="footer-logo">Interlaced</span>
+          <span class="footer-sub">by Jill</span>
+          <p class="footer-slogan">some things are meant to be interlaced</p>
+          <div class="footer-links">
+            <a href="https://instagram.com/lianjj.chiu" target="_blank">instagram</a>
+            <a href="https://facebook.com/interlacedbyjill" target="_blank">facebook</a>
+            <a href="https://tiktok.com/@interlacedbyjill" target="_blank">tiktok</a>
+          </div>
+          <p class="footer-copy">© 2025 interlaced by jill · davao, ph</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="storage.js"></script>
+
+</body>
+</html>
